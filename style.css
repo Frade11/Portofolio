@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     background-color: #0B1413;
 }
 .container{
@@ -195,11 +195,6 @@ body{
 .contact:hover{
     background-color: #10C0D7;
 }
-
-
-
-
-
 /* right part */
 .right-part{
     width: 40%;
@@ -210,3 +205,203 @@ body{
     border: 2px solid #2b2c2c;
     border-radius: 20px;
 }
+/* Home page finish */
+/* Home page adaptations */
+@media (max-width: 992px) {
+  .navigation {
+    padding: 10px 5%;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+.center-nav{
+    background-color: #171717;
+    height: 50px;
+    width: 30%;
+    display: flex;          
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 50px;
+}
+ .name, .name-colored {
+    font-size: 40px;
+    font-weight: 800;
+  }
+.specialization .text {
+    font-size: 18px;
+    padding-right: 8px;
+  }
+
+  .description {
+    width: 80%;
+    font-size: 14px;
+    margin: 40px 0;
+  }
+  .experience-blocks {
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content:flex-start;
+    width: 90%;
+  }
+
+  .info-block {
+
+    width: 100px;
+    height: 80px;
+    border-radius: 12px;
+  }
+  .info {
+    font-size: 18px;
+  }
+
+  .info-desc {
+    text-align: center;
+    font-size: 11px;
+  }
+  .cv-download {
+    font-size: 10px;
+    height: 45px;
+    width: 140px;
+    margin-top: 25px;
+  }
+.cv-download img{
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+.contact img{
+    width: 15px;
+}
+  .contact {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+.right-part img{
+    width: 260px;
+    margin-top: 30%;
+    }
+}
+@media (max-width: 768px) {
+  .center-nav {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .right-nav{
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;    
+    align-items: center;         
+    justify-content: center;
+  }
+
+  .right-part {
+    order: -1;                 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .right-part {
+    order: -1; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .right-part img {
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 18px;
+    border: 2px solid #2b2c2c;
+    display: block;
+    margin: 0 auto 25px auto;
+  }
+
+
+  .name, .name-colored {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .specialization .text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 13px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+
+  .experience-blocks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .info-block {
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+
+  .info-desc {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .cv-download {
+    width: 80%;
+    font-size: 12px;
+    height: 45px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cv-download img {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+
+  .contact {
+    width: 40px;
+    height: 40px;
+    margin: 15px 5px;
+  }
+
+  .contact img {
+    width: 14px;
+  }
+}
+
+/* End of home page */
