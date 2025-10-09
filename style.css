@@ -396,7 +396,9 @@ body{
 .nav-list.active {
   display: flex;
 }
-
+.left-part{
+    margin-left: 0;
+}
   .name, .name-colored {
     font-size: 34px;
     text-align: center;
@@ -411,7 +413,7 @@ body{
     width: 100%;
     font-size: 13px;
     margin: 20px auto;
-    text-align: center;
+    text-align: justify;
   }
 
 
@@ -458,7 +460,8 @@ body{
   .contact {
     width: 40px;
     height: 40px;
-    margin: 15px 5px;
+    margin: 15px auto;
+
   }
 
   .contact img {
