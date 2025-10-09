@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -10,10 +13,12 @@ body{
     padding: 0;
     width: 100%;
     background-color: #0B1413;
+       overflow-x: hidden;
+    
 }
 .container{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1500px; 
     margin: 0 auto;
 }
 .navigation{
@@ -23,8 +28,16 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;          
+    max-width: 100%;
     margin: 0 auto;
+    position: fixed;
+    top: 0;            
+    left: 0;
+    right: 0;
+    
+    z-index: 1002;
+    
 }
 .left-nav span{
     color: white;
@@ -62,13 +75,22 @@ body{
     font-size: 15px;
     text-align:center;
 }
+
+
+
+
+
+/* ===== Home page ========== */
 .home{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
 /* left part */
 .left-part{
+  margin-top: 5%;
     width: 60%;
     margin-left: 10%;
 }
@@ -197,6 +219,7 @@ body{
 }
 /* right part */
 .right-part{
+    margin-top: 5%;
     width: 40%;
 }
 .right-part img{
@@ -205,9 +228,12 @@ body{
     border: 2px solid #2b2c2c;
     border-radius: 20px;
 }
-/* Home page finish */
-/* Home page adaptations */
-/* Mobile nav */
+/* ====== Home page finish =======*/
+
+
+
+/* ====== Home page adaptations ========*/
+/* ====== Mobile nav =======*/
 .mobile-nav {
   position: fixed; 
   z-index: 999;
@@ -235,12 +261,16 @@ body{
 .center-nav{
     background-color: #171717;
     height: 50px;
-    width: 30%;
+    width: 70%;
     display: flex;          
     justify-content: center; 
     align-items: center;  
     border-radius: 50px;
 }
+.center-nav a{
+    margin: 0 20px;
+}
+
  .name, .name-colored {
     font-size: 40px;
     font-weight: 800;
@@ -469,4 +499,146 @@ body{
   }
 }
 
-/* End of home page */
+/* ======== End of home page =======*/
+
+
+
+/* ======= start of about page ========*/
+
+
+/* ========= left part =========== */
+
+.about{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-left-part{
+  width: 30%;
+    margin-left: 10%;
+}
+.user2-icon{
+    width: 350px;
+    margin-top: 60%;
+    border: 2px solid #2b2c2c;
+    border-radius: 20px;
+    position: relative;
+}
+.experience-on-img{
+  position: absolute;
+  top: 81%;
+  left: 28%;
+  background-color: #10C0D7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 90px;
+  height: 110px;
+  border-radius: 15px;
+}
+.first-txt{
+  font-size: 24px;
+  font-weight: 600;
+}
+.second-txt{
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+
+/* ======== right part ============ */
+.about-right-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  margin-top: 5%;
+}
+.about-me{
+  color: #10C0D7;
+  text-align: center; 
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.info-about-me{
+  margin-top: 20px;
+  color: #656d6c;
+  font-size: 15px;
+  width: 60%;
+  text-align: justify;
+}
+.about-info-block{
+  display: flex;
+  align-items: center; 
+  width: 60%;
+  height: 80px;
+  margin-top: 20px;
+  background-color: #1D1D1D;
+  border-radius: 15px;
+}
+.about-info-block img{
+  display:flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.about-info-block span{
+  display: flex;
+  flex-direction: column;
+}
+.block-name{
+  color: white;
+  font-size: 15px;
+   margin: 0; 
+}
+.block-description{
+  margin-top: 10px;
+  color: #656d6c;
+  font-size: 12px;
+   margin: 0; 
+}
+.blocks-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+    padding: 80px 0;
+    position: relative;
+    width: 100%;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+
+#about::before {
+    background-color: #121414 ; 
+}
