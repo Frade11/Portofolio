@@ -250,8 +250,39 @@ body{
 .nav-list {
   display: none;
 }
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .center-nav{
+        width: 65%;
+  }
+   .name, .name-colored {
+    font-size: 40px;
+    font-weight: 800;
+  }
+.specialization .text {
+    font-size: 18px;
+    padding-right: 8px;
+  }
 
-@media (max-width: 992px) {
+  .info-block {
+    width: 140px;
+    height: 110px;
+    border-radius: 12px;
+  }
+  .info {
+    font-size: 18px;
+  }
+
+  .info-desc {
+    text-align: center;
+    font-size: 11px;
+  }
+  .right-part img{
+    width: 240px;
+    margin-top: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
   .navigation {
     padding: 10px 5%;
     justify-content: space-between;
@@ -293,7 +324,6 @@ body{
   }
 
   .info-block {
-
     width: 100px;
     height: 80px;
     border-radius: 12px;
