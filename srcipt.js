@@ -4,23 +4,21 @@ menuIcon.addEventListener('click', function(){
     menuState.classList.toggle('active');
 });
 
-const contactLink = document.querySelectorAll('.contacts .contact img');
+const contactLink = document.querySelectorAll('.contacts .contact');
 
-contactLink.forEach(icon =>{
-    icon.addEventListener('click', () => {
-        switch(icon.className){
-            case 'telegram':
-                window.open(' ','_blank');
-                break;
-            case 'github':
-                window.open('https://github.com/Frade11', '_blank');
-                break;
-            case 'instagram':
-                window.open('','_blank');
-                break;
-            case 'whatsapp':
-                window.open(' ','_blank');
-                break;
+contactLink.forEach(contact =>{
+    contact.addEventListener('click', () => {
+        if(contact.classList.contains('telegram')){
+            window.open(' ','_blank');  
+        }
+        else if(contact.classList.contains('github')){
+            window.open('https://github.com/Frade11', '_blank');
+        }
+        else if(contact.classList.contains('instagram')){
+            window.open('', '_blank');
+        }
+        else if(contact.classList.contains('whatsapp')){
+            window.open('', '_blank');
         }
     })
 })
