@@ -74,10 +74,6 @@ body{
     text-align:center;
 }
 
-
-
-
-
 /* ===== Home page ========== */
 .home{
     display: flex;
@@ -889,11 +885,58 @@ section{
 padding-bottom: 10%;
 }
 
+.skills{
+    height: 900px; 
+    min-height: 900px;
+}
+.skills h2{
+  color:#10C0D7 ;
+  text-align: center;
+  font-size: 60px;
+}
+.cards-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+  padding: 20px 0;
+  margin: 0 auto;
+  
+  max-width: 1200px;
 
+}
+.card{
+  background-color: #161B1C;
+  padding: 20px;  
+  border-radius: 10px;
 
+}
+.card h3{
+  color: #10C0D7;
+  text-align: center;
+  font-size: 25px;
+}
+.skill{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.skill img{
+  width: 30px;
+}
+.skill span {
+    width: 100px; 
+}
+.bar{
+  flex:1;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: 40px;
 
-
-
-
+}
 
 
