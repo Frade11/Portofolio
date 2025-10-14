@@ -85,7 +85,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 900px; 
+    min-height: 900px;
 }
 
 
@@ -535,7 +536,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 900px; 
+  min-height: 900px;
   position: relative;
 }
 
@@ -885,3 +887,12 @@ section::before {
 section{
 padding-bottom: 10%;
 }
+
+
+
+
+
+
+
+
+
