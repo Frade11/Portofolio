@@ -35,9 +35,7 @@ body{
     top: 0;            
     left: 0;
     right: 0;
-    
     z-index: 1002;
-    
 }
 .left-nav span{
     color: white;
@@ -254,7 +252,7 @@ body{
 }
 @media (min-width: 1000px) and (max-width: 1350px) {
   .center-nav{
-        width: 65%;
+        width: 70%;
   }
    .name, .name-colored {
     font-size: 40px;
@@ -286,8 +284,8 @@ body{
 
 @media (max-width: 1024px) {
   .navigation {
-    padding: 10px 5%;
-    justify-content: space-between;
+    padding: 10px 1%;
+   justify-content: space-between;
     width: 100%;
     margin: 0;
   }
@@ -296,12 +294,15 @@ body{
     height: 50px;
     width: 70%;
     display: flex;          
-    justify-content: center; 
+    justify-content:center; 
     align-items: center;  
     border-radius: 50px;
 }
 .center-nav a{
-    margin: 0 20px;
+     margin: 0 20px; 
+    font-size: 14px; 
+    padding: 8px 10px;
+    
 }
 
  .name, .name-colored {
