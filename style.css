@@ -961,3 +961,31 @@ padding-bottom: 10%;
   width: var(--level);
 }
 
+/* ======== ADAPTIVE VERSION ========= */
+@media (max-width: 1124px) {
+  .cards-section{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+}
+}
+@media(min-width:768px ) and (max-width: 1024px){
+  .cards-section{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+}
+.bar{
+  background-color: #514c4c;
+  margin-left: 20px;
+}
+}
+@media (max-width:768px){
+  .cards-section{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+}
+.skill span {
+    width: 70px; 
+    font-size: 10px;
+}
+.bar{
+  background-color: #514c4c;
+  margin-left: 10px;
+}
+}
