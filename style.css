@@ -1175,7 +1175,7 @@ color:#10C0D7 ;
 /* =========== CONTACT SECTION ============= */
 .contactme{
   height: auto; 
-  min-height: 900px;
+  min-height: 500px;
 }
 .contactme h2{
 color:#10C0D7 ;
@@ -1188,12 +1188,18 @@ color:#10C0D7 ;
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
+  margin-top: 5%;
 }
 .contact-left{
   width: 40%;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 15%;
+  color: #656d6c;
+}
+.contact-left span{
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 .contact-right{
   display: flex;
@@ -1223,6 +1229,22 @@ color:#10C0D7 ;
   border: 1px solid #10C0D7;
   color:white;
   transition: 0.3s;
+}
+.contact-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 50px;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #10C0D7;
+  color: white;
+}
+.contact-btn:hover{
+  box-shadow: 0 0 25px rgba(16, 192, 215, 0.3);
+
 }
 .contact-right textarea::placeholder{
   color: #656d6c;
