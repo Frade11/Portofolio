@@ -918,6 +918,7 @@ padding-bottom: 10%;
   display: grid;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
   column-gap: 60px;
   row-gap: 40px;
@@ -1012,6 +1013,33 @@ padding-bottom: 10%;
   margin-left: 10px;
 }
 }
+@media (max-width: 600px) {
+  .skills h2 {
+    font-size: 40px;
+  }
+
+  .cards-section {
+    grid-template-columns: repeat(1, 280px);
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .skill span {
+    width: 60px;
+    font-size: 10px;
+  }
+
+  .bar {
+    margin-left: 10px;
+  }
+}
+
 
 
 /* ================= PROJECTS SECTION ================== */
@@ -1044,6 +1072,7 @@ color:#10C0D7 ;
   display: grid;
   align-items: center;
   justify-content: center;
+    justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
   max-width: 1200px;
   column-gap: 40px;
@@ -1101,7 +1130,7 @@ color:#10C0D7 ;
 /* ============== ADAPTIVE VERSION ============== */
 @media (max-width: 1024px) {
 .projects-container{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-columns: repeat(2, 300px);
   column-gap: 20px;
   row-gap: 40px;
   margin: 0 auto;
@@ -1114,4 +1143,33 @@ color:#10C0D7 ;
   width: 250px;
   height: 200px;
 }
+}
+@media (max-width:768px){
+  .projects-container{
+  grid-template-columns: repeat(2, 250px);
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+ .project-card{
+  width: 250px;
+  height: 400px;
+}
+.project-card img{
+  width: 200px;
+  height: 200px;
+}
+.project-button{
+  width: 110px;
+  height: 30px;
+}
+.project-description{
+  font-size: 12px;
+}
+}
+@media (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
