@@ -1296,16 +1296,19 @@ color:#10C0D7 ;
   .contact-btn{
     padding: 15px;
   }
-  .contact-right{
-margin-right: 20%;
-}
+  .contactme-container{
+    margin-right: 20%;
+  }
 }
 
 @media (max-width: 600px){
   .contactme h2{
     font-size: 40px;
   }
-
+.contact-right input, 
+.contact-right textarea{
+  width: 300px;
+}
   .contact-right input,
   .contact-right textarea{
     padding: 12px;
@@ -1318,5 +1321,7 @@ margin-right: 20%;
   .contact-right{
 margin-right: 25%;
 }
-
+.contact-left{
+  margin: 0 20px;
+}
 }
