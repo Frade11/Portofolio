@@ -384,15 +384,23 @@ body{
     padding: 20px 0;
     width: 80%;
     margin: 0 auto;
+    position: relative; 
   }
   .right-nav{
     display: none;
   }
 
+
+  .left-nav {
+    position: relative; 
+
+  }
   .home {
     flex-direction: column;    
     align-items: center;         
-    justify-content: center;
+    justify-content: flex-start; 
+    min-height: auto;          
+    padding-top: 20px; 
     height: 100%;
   }
 
@@ -987,12 +995,12 @@ padding-bottom: 10%;
 /* ======== ADAPTIVE VERSION ========= */
 @media (max-width: 1124px) {
   .cards-section{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-template-columns: repeat(2, 350px);
 }
 }
 @media(min-width:768px ) and (max-width: 1024px){
   .cards-section{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-columns: repeat(2, 300px);
 }
 .bar{
   background-color: #514c4c;
@@ -1001,7 +1009,7 @@ padding-bottom: 10%;
 }
 @media (max-width:768px){
   .cards-section{
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-template-columns: repeat(2, 250px);
 }
 .skill span {
     width: 70px; 
@@ -1205,6 +1213,7 @@ color:#10C0D7 ;
   display: flex;
   flex-direction: column;
   width: 35%;
+  margin-right: 5%;
 }
 .contact-right input{
   width: 100%;
@@ -1246,19 +1255,68 @@ color:#10C0D7 ;
   box-shadow: 0 0 25px rgba(16, 192, 215, 0.3);
 
 }
-.contact-right textarea::placeholder{
-  color: #656d6c;
-}
+.contact-right textarea::placeholder,
 .contact-right input::placeholder{
   color: #656d6c;
 }
-.contact-right textarea:focus{
-  border: 1px solid #10C0D7;
-  box-shadow: 0 0 25px rgba(16, 192, 215, 0.3);
-  outline: none;
-}
+.contact-right textarea:focus,
 .contact-right input:focus{
   border: 1px solid #10C0D7;
   box-shadow: 0 0 25px rgba(16, 192, 215, 0.3);
   outline: none;
+}
+/* ============ ADAPTIVE VERSION ========= */
+@media (max-width: 1024px){
+  .contactme-container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+.contact-left{
+  margin-top: 30px;
+}
+.contact-right input, 
+.contact-right textarea{
+  width: 400px;
+}
+.contact-btn{
+  width: 130px;
+}
+}
+
+@media (max-width: 768px){
+  .contactme h2{
+    font-size: 45px;
+  }
+
+  .contact-right input,
+  .contact-right textarea{
+    padding: 15px;
+  }
+
+  .contact-btn{
+    padding: 15px;
+  }
+  .contact-right{
+margin-right: 20%;
+}
+}
+
+@media (max-width: 600px){
+  .contactme h2{
+    font-size: 40px;
+  }
+
+  .contact-right input,
+  .contact-right textarea{
+    padding: 12px;
+  }
+
+  .contact-btn{
+    width: 100%; 
+    padding: 12px;
+  }
+  .contact-right{
+margin-right: 25%;
+}
+
 }
