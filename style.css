@@ -1307,3 +1307,42 @@ section::projects {
     margin: 0 20px;
   }
 }
+/* ============ FO0TER ========= */
+.footer {
+  background-color: #0d1117;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 10px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #1c1f26;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-name {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.2);
+  filter: invert(57%) sepia(98%) saturate(749%) hue-rotate(152deg) brightness(95%) contrast(97%);
+}
