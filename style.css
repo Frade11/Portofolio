@@ -167,13 +167,13 @@ body {
 }
 .cv-container{
   display: flex;
-
-
 }
 .contact-belong-cs a{
   text-decoration: none;
   color: white;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 .contact-belong-cs, .cv-download {
   display: flex;
@@ -206,6 +206,10 @@ body {
   width: 12px;
   height: 12px;
   margin-right: 10px;
+}
+.contact-belong-cs img {
+ width: 18px;
+ height: 18px;
 }
 .cv-download:hover{
   background-color: #10c0d7;
