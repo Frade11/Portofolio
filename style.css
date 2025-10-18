@@ -165,17 +165,18 @@ body {
   color: #656d6c;
   font-size: 15px;
 }
-.cv-container{
+.cv-container {
   display: flex;
 }
-.contact-belong-cs a{
+.contact-belong-cs a {
   text-decoration: none;
   color: white;
   font-size: 12px;
   display: flex;
   align-items: center;
 }
-.contact-belong-cs, .cv-download {
+.contact-belong-cs,
+.cv-download {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,10 +209,10 @@ body {
   margin-right: 10px;
 }
 .contact-belong-cs img {
- width: 18px;
- height: 18px;
+  width: 18px;
+  height: 18px;
 }
-.cv-download:hover{
+.cv-download:hover {
   background-color: #10c0d7;
   box-shadow: 0 0 25px rgba(16, 192, 215, 0.3);
 }
@@ -363,17 +364,18 @@ body {
     text-align: center;
     font-size: 11px;
   }
-  .cv-download, .contact-belong-cs{
+  .cv-download,
+  .contact-belong-cs {
     font-size: 10px;
     height: 45px;
     width: 140px;
     margin-top: 25px;
   }
-  .contact-belong-cs a{
+  .contact-belong-cs a {
     font-size: 10px;
-
   }
-  .cv-download img, .contact-belong-cs img {
+  .cv-download img,
+  .contact-belong-cs img {
     width: 12px;
     height: 12px;
     margin-right: 10px;
@@ -422,9 +424,9 @@ body {
     padding-top: 20px;
     height: 100%;
   }
-.cv-container{
-  flex-direction: column;
-}
+  .cv-container {
+    flex-direction: column;
+  }
   .right-part {
     order: -1;
     width: 100%;
@@ -532,7 +534,8 @@ body {
     text-align: center;
   }
 
-  .cv-download,.contact-belong-cs {
+  .cv-download,
+  .contact-belong-cs {
     width: 80%;
     font-size: 12px;
     height: 45px;
@@ -541,14 +544,15 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .contact-belong-cs{
+  .contact-belong-cs {
     margin: 25px auto;
   }
-  .contact-belong-cs a{
+  .contact-belong-cs a {
     font-size: 12px;
   }
 
-  .cv-download img,.contact-belong-cs img {
+  .cv-download img,
+  .contact-belong-cs img {
     width: 14px;
     height: 14px;
     margin-right: 8px;
@@ -1349,7 +1353,7 @@ section::projects {
   color: #ccc;
   text-align: center;
   padding: 25px 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-top: 1px solid #1c1f26;
 }
 
@@ -1381,5 +1385,6 @@ section::projects {
 
 .footer-icons img:hover {
   transform: scale(1.2);
-  filter: invert(57%) sepia(98%) saturate(749%) hue-rotate(152deg) brightness(95%) contrast(97%);
+  filter: invert(57%) sepia(98%) saturate(749%) hue-rotate(152deg)
+    brightness(95%) contrast(97%);
 }
