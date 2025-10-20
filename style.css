@@ -1407,7 +1407,7 @@ section::projects {
 }
 /* ============  ALERT ACCOUNT NOT LINKED ========= */
 .account-not-linked{
-  display: block;
+  display: none;
   position: fixed;
   background-color: #d63c16d6;
   width: 300px;
@@ -1417,5 +1417,5 @@ section::projects {
   z-index: 1000;
   top: 80px;
   left: 50%;
-  transform:translateX(-50%)
+  transform:translateX(-50%);
 }

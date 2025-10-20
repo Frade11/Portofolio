@@ -5,30 +5,35 @@ menuIcon.addEventListener('click', function(){
 });
 
 const contactLink = document.querySelectorAll('.contacts .contact');
+const alertMessage = document.querySelector('.account-not-linked');
 
 contactLink.forEach(contact =>{
     contact.addEventListener('click', () => {
         if(contact.classList.contains('telegram')){
             // window.open(' ','_blank');  
-
+            accountNotLinked();
         }
         else if(contact.classList.contains('github')){
             window.open('https://github.com/Frade11', '_blank');
         }
         else if(contact.classList.contains('instagram')){
-            window.open('', '_blank');
+            // window.open('', '_blank');
+            accountNotLinked();
         }
         else if(contact.classList.contains('whatsapp')){
-            window.open('', '_blank');
+            // window.open('', '_blank');
+            accountNotLinked();
         }
     })
 })
 
 function accountNotLinked(){
+    alertMessage.style.display = 'block'; 
     setTimeout(() => {
-        
-    }, 3000);
+     alertMessage.style.display = 'none';
+    }, 3000); 
 }
+
 
 let cards = document.querySelectorAll(".card");
 
