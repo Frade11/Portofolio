@@ -29,9 +29,14 @@ contactLink.forEach(contact =>{
 
 function accountNotLinked(){
     alertMessage.style.display = 'block'; 
-    setTimeout(() => {
-     alertMessage.style.display = 'none';
-    }, 3000); 
+      alertMessage.style.animation = 'fadeIn 0.5s ease forwards';
+         setTimeout(() => {
+          alertMessage.style.animation = 'fadeOut 0.5s ease forwards';
+        setTimeout(() => {
+         alertMessage.style.display = 'none';
+    }, 500); 
+      },3000)
+
 }
 
 
