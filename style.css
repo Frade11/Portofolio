@@ -1396,11 +1396,26 @@ section::projects {
   right: 50px;
   bottom: 50px;
   z-index: 10000;
-  transition: transform 1.3 ease, filter 1.3 ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 .scroll-top img{
   width: 50px;
 }
 .scroll-top:hover{
   transform: scale(1.05);
+}
+/* ============  ALERT ACCOUNT NOT LINKED ========= */
+.account-not-linked{
+  display: block;
+  position: fixed;
+  background-color: #d63c16d6;
+  width: 300px;
+  height: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  top: 80px;
+  left: 50%;
+  transform:translateX(-50%)
 }

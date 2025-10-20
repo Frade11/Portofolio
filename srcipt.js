@@ -9,7 +9,8 @@ const contactLink = document.querySelectorAll('.contacts .contact');
 contactLink.forEach(contact =>{
     contact.addEventListener('click', () => {
         if(contact.classList.contains('telegram')){
-            window.open(' ','_blank');  
+            // window.open(' ','_blank');  
+
         }
         else if(contact.classList.contains('github')){
             window.open('https://github.com/Frade11', '_blank');
@@ -22,6 +23,12 @@ contactLink.forEach(contact =>{
         }
     })
 })
+
+function accountNotLinked(){
+    setTimeout(() => {
+        
+    }, 3000);
+}
 
 let cards = document.querySelectorAll(".card");
 
@@ -63,4 +70,4 @@ scrollTopBtn.addEventListener('click', () =>{
         top:0,
         behavior: "smooth"
     });
-})s
+})
