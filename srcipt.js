@@ -35,5 +35,14 @@ const observer = new IntersectionObserver(entries => {
 {
     threshold: 0.5
 });
+cards.forEach(card => observer.observe(card));
 
-    cards.forEach(card => observer.observe(card));
+const talkBtn = document.querySelector('.right-nav');
+
+talkBtn.addEventListener('click', () =>{
+    window.scrollTo({
+    top: 0,
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+});
+})
